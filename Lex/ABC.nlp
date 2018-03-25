@@ -1,0 +1,6 @@
+a :: a :: *A*
+b :: a/a :: *B*
+c :: a\a :: *C*
+
+% b b b b a c c c c -> a
+--% b b b b b b b b b b a c c c c c c c c c c -> a

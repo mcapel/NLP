@@ -1,0 +1,72 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath,mathrsfs}
+\usepackage{graphicx}
+\usepackage{stmaryrd}
+\usepackage{proof}
+\usepackage{textcomp}
+\usepackage{ifthen}
+\usepackage{color}
+\usepackage{calc}
+\usepackage{latexsym}
+
+\RequirePackage[pdftex,pagebackref,pdfpagemode=none,colorlinks,%
+             pdfmenubar=false,%
+             pdftoolbar=false,%
+             pdffitwindow=true,pdfcenterwindow=true,%
+             pdfwindowui=false,menucolor=menucolor,%
+             pdfview=Fit,pdfstartview=Fit]{hyperref}
+
+\pagestyle{empty}
+\definecolor{azzurro}{rgb}{0.1,0.2,0.8}
+\newcommand{\textazz}[1]{\mbox{\scriptsize{\textcolor{azzurro}{$#1$}}}}
+\newcommand{\Boxd}{\Box}
+\newcommand{\bs}{\backslash}
+\newcommand{\bo}{[}
+\newcommand{\bb}{]}
+\newcommand{\dia}{\diamondsuit}
+\newcommand{\lx}{\vartriangleleft}
+\newcommand{\ev}{\text{ev}}
+\newcommand{\rx}{\vartriangleright}
+
+
+\newlength{\wdtotal}
+\newlength{\httotal}
+\setlength{\wdtotal}{0.0cm}
+\setlength{\httotal}{0.0cm}
+
+%%
+% box for eg1.tex
+%%
+\newsavebox{\proofboxa}
+\sbox{\proofboxa}{\input{Eg/eg1.tex}}
+\ifthenelse{\wd\proofboxa > \wdtotal}{\setlength{\wdtotal}{\wd\proofboxa}}{}
+\ifthenelse{\ht\proofboxa > \httotal}{\setlength{\httotal}{\ht\proofboxa}}{}
+
+%%
+% box for eg2.tex
+%%
+\newsavebox{\proofboxb}
+\sbox{\proofboxb}{\input{Eg/eg2.tex}}
+\ifthenelse{\wd\proofboxb > \wdtotal}{\setlength{\wdtotal}{\wd\proofboxb}}{}
+\ifthenelse{\ht\proofboxb > \httotal}{\setlength{\httotal}{\ht\proofboxb}}{}
+
+\setlength{\paperwidth}{2in+\wdtotal}
+\setlength{\paperheight}{3in+\httotal}
+\textwidth = \wdtotal
+\textheight = \httotal
+
+\oddsidemargin = 0.0 in
+\evensidemargin = 0.0 in
+\topmargin = 0.0 in
+\headheight = 0.0 in
+\headsep = 0.0 in
+\parskip = 0.2in
+\parindent = 0.0in
+
+\begin{document}
+\usebox{\proofboxa}
+\newpage
+\usebox{\proofboxb}
+\newpage
+\end{document}
+

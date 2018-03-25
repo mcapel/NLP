@@ -1,0 +1,32 @@
+tämä :: n :: *THIS*
+tuo :: n :: *THAT*
+tämä :: n/n :: *THIS*
+tuo :: n/n :: *THAT*
+
+tyttö :: n :: *GIRL*
+poika :: n :: *BOY*
+mies :: n :: *MAN*
+nainen :: n :: *WOMAN*
+
+pieni :: n/n :: *SMALL*
+iso :: n/n :: *BIG*
+kaunis :: n/n :: *BEAUTIFUL*
+hyvä :: n/n :: *GOOD*
+nuori :: n/n :: *JOUNG*
+vanha :: n/n :: *OLD*
+
+pieni :: a :: *SMALL*
+iso :: a :: *BIG*
+kaunis :: a :: *BEAUTIFUL*
+hyvä :: a :: *GOOD*
+nuori :: a :: *JOUNG*
+vanha :: a :: *OLD*
+
+oli :: (n\s)/n :: *WAS*
+oli :: (n\s)/a :: *WAS*
+
+puhun :: (n\s)/n :: *SPEAK*
+
+vain :: ((n\s)/n)\((n\s)/n) :: *ONLY*
+
+% tämä pieni poika oli nuori -> s

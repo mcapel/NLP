@@ -1,0 +1,33 @@
+questo :: n :: *THIS*
+questo :: n/n :: *THIS*
+quello :: n :: *THAT*
+quello :: n/n :: *THAT*
+
+ragazza :: n :: *GIRL*
+ragazzo :: n :: *BOY*
+uomo :: n :: *MAN*
+donna :: n :: *WOMAN*
+
+piccolo :: n\n :: *SMALL*
+grande :: n\n :: *BIG*
+bello :: n\n :: *BEAUTIFUL*
+buono :: n\n :: *GOOD*
+giovane :: n\n :: *JOUNG*
+vecchio :: n\n :: *OLD*
+
+piccolo :: a :: *SMALL*
+grande :: a :: *BIG*
+bello :: a :: *BEAUTIFUL*
+buono :: a :: *GOOD*
+giovane :: a :: *JOUNG*
+vecchio :: a :: *OLD*
+
+era :: (n\s)/n :: *WAS*
+era :: (n\s)/a :: *WAS*
+
+parla :: (n\s)/n :: *SPEAK*
+
+solo :: ((n\s)/n)\((n\s)/n) :: *ONLY*
+
+% questo ragazzo piccolo era giovane -> s
+% questo ragazzo piccolo -> n

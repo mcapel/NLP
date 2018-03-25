@@ -1,0 +1,40 @@
+Name: NLP
+Author: Matteo Capelletti
+Date: 21/05/05
+email: Matteo.Capelletti@let.uu.nl
+-------------------------------------------------------------------------
+General description:
+-------------------------------------------------------------------------
+NLP is a parser for the Non-associative Lambek calculus with product (NL).
+It implements the basic methods for parsing with Lambek grammars developed 
+in my PhD thesis: Parsing with Structure-Preserving Categorial Grammars, 
+Utrecht University, 2007. 
+-------------------------------------------------------------------------
+Description of the modules:
+-------------------------------------------------------------------------
+Main.hs: high level functions. To start parser call the function main. 
+         This gives you a series of options.
+         
+Data.hs: all the data types, basic utilities, show and latex functions.
+
+ER.hs: reduces the computation of an NL grammar to the computation of the equivalent Ajdukiewicz-Bar Hillel grammar.
+
+Mix.hs: the recognizer.
+
+Parse.hs: the parser.
+
+Lexer.hs: parser combinators for reading the fragments.
+-------------------------------------------------------------------------
+Installation: 
+-------------------------------------------------------------------------
+Unzip the folder in some location.
+The folder Lex contains some sample fragments. You can extend them or create 
+new ones, with extension .nlp. 
+-------------------------------------------------------------------------
+Usage: 
+-------------------------------------------------------------------------
+1) $ ghci Main.hs
+2) Main> main
+
+The current version contains a couple of commands specific to Mac. 
+If you don't have a Mac, just change the function tex in Main.hs
